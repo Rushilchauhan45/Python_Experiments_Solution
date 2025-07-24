@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-
-```
->>>>>>> b93084c68934d3a77936fd78b43f88944e97b4f5
 # 🔬 Python Programming – Experiment Solutions
 
 This repository contains detailed and well-structured solutions to Python programming lab experiments as per the academic syllabus. Each solution includes code, output examples, and explanation — ideal for practical submissions and viva preparation.
@@ -40,25 +35,13 @@ This repository contains detailed and well-structured solutions to Python progra
 ## 📂 Folder Structure
 
 ```
-<<<<<<< HEAD
-/python-experiments
+/Python_Experiments_Solution
 │
-├── Experiment_1.txt
-├── Experiment_2.txt
-├── Experiment_3.txt
-├── Experiment_4.txt
+├── Experiment-1
+├── Experiment-2
+├── Experiment-3
+├── Experiment-4
 ├── README.md
-=======
-
-/python-experiments
-│
-├── Experiment\_1.txt
-├── Experiment\_2.txt
-├── Experiment\_3.txt
-├── Experiment\_4.txt
-├── README.md
-
->>>>>>> b93084c68934d3a77936fd78b43f88944e97b4f5
 ```
 
 ---
@@ -66,27 +49,17 @@ This repository contains detailed and well-structured solutions to Python progra
 ## 🚀 How to Use
 
 1. Clone this repository:
+
 ```
-<<<<<<< HEAD
-git clone [https://github.com/your-username/python-experiments.git](https://github.com/your-username/python-experiments.git)
-=======
-
-git clone [https://github.com/your-username/python-experiments.git](https://github.com/your-username/python-experiments.git)
-
->>>>>>> b93084c68934d3a77936fd78b43f88944e97b4f5
+git clone https://github.com/your-username/python-experiments.git
 ```
 
-2. Open any `.txt` file for detailed explanation and code.
+2. Open any experiment folder for detailed explanation and code.
 
 3. Run code in your Python environment:
+
 ```
-<<<<<<< HEAD
 python filename.py
-=======
-
-python filename.py
-
->>>>>>> b93084c68934d3a77936fd78b43f88944e97b4f5
 ```
 
 ---
@@ -115,10 +88,3 @@ If this repo helped you, give it a ⭐ and share with friends.
 ## 📝 License
 
 This project is for educational use only. Feel free to modify and reuse with credit.
-<<<<<<< HEAD
-=======
-```
-
----
->>>>>>> b93084c68934d3a77936fd78b43f88944e97b4f5
-
