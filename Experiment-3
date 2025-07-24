@@ -1,0 +1,92 @@
+[1] Write a Python program that accepts a word from the user and reverses it.
+--> This program takes a word input from the user and prints its reverse.
+
+➤ Steps Involved:
+
+Step-1: Accept input using input()
+Step-2: Use string slicing to reverse the word
+Step-3: Print the reversed string
+
+➤ Example:
+
+Enter a word: python
+Reversed word: nohtyp
+
+➤ Program:
+
+word = input("Enter a word: ")
+reversed_word = word[::-1]
+print("Reversed word:", reversed_word)
+
+[2] Write a Python program to find those numbers which are divisible by 7 and multiples of 5, between 1500 and 2700 (both included).
+
+➤ Objective:
+To use a loop and condition to find and print specific numbers in a range.
+
+➤ Python Code:
+
+for i in range(1500, 2701):
+        if i % 7 == 0 and i % 5 == 0:
+            print(i, end=" ")
+
+➤ Output Example:
+1505 1540 1575 1610 ... 2695
+
+➤ Explanation:
+The loop checks each number between 1500 and 2700.
+If the number is divisible by both 7 and 5, it is printed.
+
+[3] Write a Python program to convert temperatures to and from Celsius and Fahrenheit.
+
+➤ Objective:
+To convert temperature from Celsius to Fahrenheit and vice versa using standard formulas.
+
+➤ Python Code:
+
+choice = input("Convert to (C)elsius or (F)ahrenheit? Enter C or F: ")
+temp = float(input("Enter the temperature: "))
+
+if choice == 'F':
+        converted = (temp * 9/5) + 32
+        print("Temperature in Fahrenheit:", converted)
+elif choice == 'C':
+        converted = (temp - 32) * 5/9
+        print("Temperature in Celsius:", converted)
+else:
+        print("Invalid input..!")
+
+➤ Output Example:
+-->Enter temperature: 100
+-->Convert to (C)elsius or (F)ahrenheit? F
+-->Temperature in Fahrenheit: 212.0
+
+➤ Explanation:
+
+Celsius to Fahrenheit: F = (C × 9/5) + 32
+Fahrenheit to Celsius: C = (F − 32) × 5/9
+
+The program uses if-elif to choose the correct formula.
+
+[4] Write a Python function that takes a sequence of numbers and determines whether all the numbers are different from each other.
+
+➤ Objective:
+To define a Python function that checks if a list of numbers contains only unique elements.
+
+➤ Python Code:
+def all_unique(seq):
+    return len(seq) == len(set(seq))
+
+Test examples:
+---------------
+print(all_unique([1, 2, 3, 4]))   #True
+print(all_unique([1, 2, 2, 3]))   #False
+
+➤ Output Example:
+-->True
+-->False
+
+➤ Explanation:
+-->The function converts the list to a set.
+-->Sets automatically remove duplicates.
+-->If the length of set and original list are equal, all elements are unique.
+

@@ -1,0 +1,124 @@
+[1] How many important control structures are there in Python?
+--> In Python, four main types of control structures are used to control the flow of the program:
+➤ 1. Sequential Statements
+The default mode of execution where statements are executed line by line.
+➤ 2. Selection Statements (Decision Making)
+These include: if, if-else, if-elif-else
+➤ 3. Looping Statements (Iteration)
+These include: for loop, while loop
+➤ 4. Jump Statements (Control Flow Alteration)
+break – to exit the loop
+continue – to skip current iteration
+pass – a placeholder statement
+
+[2] elif can be considered to be abbreviation of
+--> The keyword elif stands for: “else if”
+--> It is used when we want to check multiple conditions after an initial if condition.
+
+📌 Example:
+
+A = 10
+if A == 5:
+    print("This is Five..!")
+elif A == 10:
+    print("This is Ten..!")   # This will be printed
+else:
+    print("Other..!")
+
+[3] Which statement is generally used as a placeholder?
+--> The pass statement is used as a placeholder in Python.
+
+➤ Use:
+It allows code to run without any action where code is syntactically required.
+
+📌 Example:
+
+for i in range(5):
+    pass  # Placeholder to be filled later
+
+[4] The condition in the if statement should be in the form of
+--> The condition in the if statement should be in the form of a Boolean expression (i.e., returns True or False).
+
+📌 Example:
+
+age = 18
+if age >= 18:
+    print("Eligible to vote")
+
+➤ Valid Boolean conditions include:
+Comparison operators: ==, !=, <, >, <=, >=
+Logical operators: and, or, not
+Membership: in, not in
+
+[5] Write note on break statement
+--> The break statement is used to exit a loop immediately, even if the loop condition is still true.
+
+➤ Use:
+It helps in stopping the loop when a particular condition is met.
+
+📌 Example:
+
+for i in range(1, 10):
+    if i == 5:
+        break
+    print(i)
+
+📌 Output:
+
+1
+2
+3
+4
+➤ The loop breaks when i == 5, skipping all further iterations.
+
+[6] Explain the use of range() in loop of python
+--> The range() function is used to generate a sequence of numbers, commonly used with loops.
+
+➤ Syntax:
+
+range(start, stop, step)
+
+start: Starting value (default is 0)
+stop: End value (excluded)
+step: Increment value (default is 1)
+-------------------------
+📌 Example 1:
+
+for i in range(5):
+    print(i)
+
+📌 Output: 0 1 2 3 4
+-------------------------
+📌 Example 2:
+
+for i in range(1, 10, 2):
+    print(i)
+📌 Output: 1 3 5 7 9
+-------------------------
+
+[7] Write a program to display
+A
+A  B
+A  B  C
+A  B  C  D
+A  B  C  D  E
+
+📌 Python Program:
+
+for i in range(1, 6):
+    for j in range(65, 65 + i):
+        print(chr(j), end="  ")
+    print()
+
+📌 Explanation:
+
+chr(65) returns 'A', chr(66) returns 'B', and so on.
+Outer loop controls the number of rows.
+Inner loop prints increasing alphabets based on row number.
+
+📌 Output:
+A
+A  B
+A  B  C
+A  B  C  D
+A  B  C  D  E

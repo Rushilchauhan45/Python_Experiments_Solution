@@ -1,0 +1,114 @@
+[1] What is the key difference between tuples and lists?
+--> The key differences between tuples and lists are given below:
+---------------------------------------------------------------------------------------------
+| Feature           | Tuple                              | List                             |
+|------------------ |------------------------------------|----------------------------------|
+| Mutability        | Immutable (cannot be changed)      | Mutable (can be changed)         |
+| Brackets used     | Parentheses ( )                    | Square brackets [ ]              |
+| Methods available | Fewer (only count(), index())      | Many (like append(), remove())   |
+| Performance       | Faster (less memory)               | Slower compared to tuples        |
+| Use case          | Fixed data                         | Data that may change             |
+| Example           | Tuple → t = (1, 2, 3)              | List → l = [1, 2, 3]             |
+---------------------------------------------------------------------------------------------
+
+[2] How to sort elements of a tuple?
+--> A tuple cannot be sorted directly because it is immutable.
+--> To sort a tuple:
+
+➤ Step 1: Convert the tuple into a list using list()
+➤ Step 2: Sort the list using sorted() or sort()
+➤ Step 3: Convert the sorted list back into a tuple using tuple()
+
+Example:
+t = (50, 20, 10, 40)
+temp_list = list(t)
+temp_list.sort()
+sorted_tuple = tuple(temp_list)
+
+Output: (10, 20, 40, 50)
+
+[3] Explain any two methods available for a tuple?
+--> Tuples support only a few built-in methods due to their immutability.
+    Two commonly used methods are:
+
+➤ count(x)
+Returns the number of times the element x appears in the tuple.
+Useful for checking frequency.
+
+Example:
+t = (1, 2, 3, 2, 2)
+t.count(2)
+→ Output: 3
+
+➤ index(x)
+Returns the index of the first occurrence of element x in the tuple.
+If the element is not found, it raises a ValueError.
+
+Example:
+t = (10, 20, 30, 40, 20)
+t.index(20)
+→ Output: 1
+
+[4] How to find the number of occurrence of an element in a tuple?
+--> The count() method is used to find how many times an element appears in a tuple.
+
+Syntax:
+tuple_name.count(value)
+
+Example:
+t = (3, 6, 9, 3, 3, 6)
+t.count(3)
+→ Output: 3
+
+➤ It tells us that 3 occurs three times in the tuple.
+➤ This is useful for data analysis and pattern checking within tuples.
+
+[5] How to create a tuple?
+--> Tuples can be created in several ways:
+
+➤ Using parentheses:
+t1 = (1, 2, 3)
+
+➤ Without parentheses (comma-separated values):
+t2 = 4, 5, 6
+
+➤ With a single element (must include a trailing comma):
+t3 = (10,) ← correct
+t4 = (10) ← wrong (this is just an integer, not a tuple)
+
+➤ Using tuple() constructor:
+t5 = tuple([7, 8, 9])
+
+➤ Tuples can also contain mixed data types:
+t6 = ("Python", 3.14, 10)
+
+[6]  How to delete a tuple?
+--> Since tuples are immutable, you cannot delete specific elements from them.
+However, you can delete the entire tuple using the del keyword.
+
+Example:
+t = (1, 2, 3)
+del t
+
+➤ After this, trying to access t will give an error because the tuple no longer exists in memory.
+➤ Note: This operation is irreversible and should be done carefully.
+
+[7] How to add an element to a tuple?
+--> You cannot add an element directly to a tuple because it is immutable.
+--> But you can create a new tuple by combining the existing tuple with another tuple.
+
+Steps to add an element to a tuple:
+
+Create the original tuple
+Create a new single-element tuple using (value,)
+Use concatenation (+) to form a new tuple
+
+Example:
+t = (1, 2, 3)
+new_element = (4,)
+t = t + new_element
+
+➤ New tuple: (1, 2, 3, 4)
+➤ Note: Do not forget the comma in (4,) – otherwise it will not be treated as a tuple.
+
+
